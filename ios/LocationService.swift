@@ -10,35 +10,36 @@ import Foundation
 import CoreLocation
 
 @objc(LocationService)
-class LocationService: NSObject {
-    let locationManager = CLLocationManager()
+class LocationService: RCTEventEmitter {
     
-    @objc(requestPermission)
+    let locManager = CLLocationManager()
+    
+    // we need to override this method and
+    // return an array of event names that we can listen to
+    override func supportedEvents() -> [String]! {
+        return ["LocationListener"]
+    }
+    
+    @objc
     func requestPermission() {
-        locationManager.requestAlwaysAuthorization()
+        locManager.requestAlwaysAuthorization()
     }
     
-    @objc(startLocationTracking)
+    @objc
     func startLocationTracking() {
-        locationManager.startMonitoringVisits()
-        locationManager.delegate = self
+        locManager.startMonitoringVisits()
+        locManager.delegate = self
     }
+    
 }
 
-
 extension LocationService: CLLocationManagerDelegate {
+    
     func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
-        // create CLLocation from the coordinates of CLVisit
-        let clLocation = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
-        
+        sendEvent(withName: "LocationListener", body: ["locationInfo": visit])
     }
     
     func newVisitReceived(_ visit: CLVisit, description: String) {
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first else {
-            return
-        }
+        sendEvent(withName: "LocationListener", body: ["locationInfo": visit])
     }
 }

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNReactNativeBackgroundService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */; };
+		72E9E738225A6F80000C58C4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E9E737225A6F80000C58C4 /* LocationService.swift */; };
+		B3E7B58A1CC2AC0600A0062D /* ReactNativeBackgroundService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ReactNativeBackgroundService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +92,10 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNReactNativeBackgroundService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeBackgroundService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		720BA7D1225A24E9004CEAB3 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* RNReactNativeBackgroundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeBackgroundService.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeBackgroundService.m; sourceTree = "<group>"; };
+		72E9E736225A6F80000C58C4 /* RNReactNativeBackgroundService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNReactNativeBackgroundService-Bridging-Header.h"; sourceTree = "<group>"; };
+		72E9E737225A6F80000C58C4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* ReactNativeBackgroundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeBackgroundService.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* ReactNativeBackgroundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeBackgroundService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +120,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				72E9E737225A6F80000C58C4 /* LocationService.swift */,
 				720BA7D1225A24E9004CEAB3 /* React.xcodeproj */,
-				B3E7B5881CC2AC0600A0062D /* RNReactNativeBackgroundService.h */,
-				B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */,
+				B3E7B5881CC2AC0600A0062D /* ReactNativeBackgroundService.h */,
+				B3E7B5891CC2AC0600A0062D /* ReactNativeBackgroundService.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				72E9E736225A6F80000C58C4 /* RNReactNativeBackgroundService-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNReactNativeBackgroundService.m in Sources */,
+				72E9E738225A6F80000C58C4 /* LocationService.swift in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* ReactNativeBackgroundService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +380,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNReactNativeBackgroundService;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNReactNativeBackgroundService-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -394,6 +401,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNReactNativeBackgroundService;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNReactNativeBackgroundService-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
