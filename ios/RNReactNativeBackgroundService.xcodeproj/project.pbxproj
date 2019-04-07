@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720BA7EF225A2568004CEAB3 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720BA7EE225A2568004CEAB3 /* LocationService.swift */; };
-		720BA7F1225A2697004CEAB3 /* LocationServiceBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 720BA7F0225A2697004CEAB3 /* LocationServiceBridge.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNReactNativeBackgroundService.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */; };
 /* End PBXBuildFile section */
 
@@ -93,9 +91,6 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNReactNativeBackgroundService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeBackgroundService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		720BA7D1225A24E9004CEAB3 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		720BA7EE225A2568004CEAB3 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		720BA7F0225A2697004CEAB3 /* LocationServiceBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationServiceBridge.m; sourceTree = "<group>"; };
-		720BA7F2225A272E004CEAB3 /* LocationService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationService-Bridging-Header.h"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNReactNativeBackgroundService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeBackgroundService.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeBackgroundService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,9 +117,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				720BA7F2225A272E004CEAB3 /* LocationService-Bridging-Header.h */,
-				720BA7F0225A2697004CEAB3 /* LocationServiceBridge.m */,
-				720BA7EE225A2568004CEAB3 /* LocationService.swift */,
 				720BA7D1225A24E9004CEAB3 /* React.xcodeproj */,
 				B3E7B5881CC2AC0600A0062D /* RNReactNativeBackgroundService.h */,
 				B3E7B5891CC2AC0600A0062D /* RNReactNativeBackgroundService.m */,
@@ -271,8 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720BA7EF225A2568004CEAB3 /* LocationService.swift in Sources */,
-				720BA7F1225A2697004CEAB3 /* LocationServiceBridge.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNReactNativeBackgroundService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
