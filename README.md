@@ -1,13 +1,13 @@
 
-# react-native-react-native-background-service
+react-native-background-service
 
 ## Getting started
 
-`$ npm install react-native-react-native-background-service --save`
+`$ npm install react-native-background-service --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-react-native-background-service`
+`$ react-native link react-native-background-service`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-react-native-background-service` and add `RNReactNativeBackgroundService.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-background-service` and add `RNReactNativeBackgroundService.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNReactNativeBackgroundService.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +26,18 @@
   - Add `new RNReactNativeBackgroundServicePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-react-native-background-service'
-  	project(':react-native-react-native-background-service').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-react-native-background-service/android')
+  	include ':react-native-background-service'
+  	project(':react-native-background-service').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-background-service/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-react-native-background-service')
+      compile project(':react-native-background-service')
   	```
 
 #### Windows
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. In Visual Studio add the `RNReactNativeBackgroundService.sln` in `node_modules/react-native-react-native-background-service/windows/RNReactNativeBackgroundService.sln` folder to their solution, reference from their app.
+1. In Visual Studio add the `RNReactNativeBackgroundService.sln` in `node_modules/react-native-background-service/windows/RNReactNativeBackgroundService.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using React.Native.Background.Service.RNReactNativeBackgroundService;` to the usings at the top of the file
   - Add `new RNReactNativeBackgroundServicePackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -45,7 +45,7 @@
 
 ## Usage
 ```javascript
-import RNReactNativeBackgroundService from 'react-native-react-native-background-service';
+import RNReactNativeBackgroundService from 'react-native-background-service';
 
 // TODO: What to do with the module?
 RNReactNativeBackgroundService;
