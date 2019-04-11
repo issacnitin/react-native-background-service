@@ -15,4 +15,9 @@
 RCT_EXTERN_METHOD(requestPermission);
 RCT_EXTERN_METHOD(startLocationTracking);
 
++(BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 @end
