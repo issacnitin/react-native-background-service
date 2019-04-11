@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name         = "RNReactNativeBackgroundService"
+  s.name         = "react-native-background-service"
   s.version      = "1.0.0"
   s.summary      = "RNReactNativeBackgroundService"
   s.description  = <<-DESC
