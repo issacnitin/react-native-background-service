@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var react_native_1 = require("react-native");
-var ReactNativeBackgroundService = react_native_1.NativeModules.ReactNativeBackgroundService;
-exports.default = ReactNativeBackgroundService;
+const react_native_1 = require("react-native");
+const RNBackgroundServiceLocationService = react_native_1.NativeModules.LocationService;
+const RNBackgroundServiceLocationListener = new react_native_1.NativeEventEmitter(react_native_1.NativeModules.LocationService);
+exports.default = { RNBackgroundServiceLocationListener,
+    RNBackgroundServiceLocationService };

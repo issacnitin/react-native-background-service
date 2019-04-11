@@ -1,6 +1,8 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules, NativeEventEmitter } from 'react-native';
 
-const { ReactNativeBackgroundService } = NativeModules;
+const RNBackgroundServiceLocationService = NativeModules.LocationService;
+const RNBackgroundServiceLocationListener = new NativeEventEmitter(NativeModules.LocationService);
 
-export default ReactNativeBackgroundService;
+export default { RNBackgroundServiceLocationListener,
+RNBackgroundServiceLocationService}

@@ -1,2 +1,5 @@
-declare const ReactNativeBackgroundService: any;
-export default ReactNativeBackgroundService;
+declare const _default: {
+    RNBackgroundServiceLocationListener: import("react-native").EventEmitter;
+    RNBackgroundServiceLocationService: any;
+};
+export default _default;
