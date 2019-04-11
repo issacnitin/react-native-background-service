@@ -2,8 +2,8 @@
   "name": "react-native-background-service",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
-  "types": "./index.d.ts",
+  "main": "libs/index.js",
+  "types": "libs/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,9 @@
   "devDependencies": {
     "typescript": "^3.4.3",
     "@types/react-native": "^0.57.43"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.4"
   }
 }
